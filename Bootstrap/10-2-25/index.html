@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .demo{
+            height: 400px;
+            border: 2px solid green;
+        }
+
+        #data{
+            height: 200px;
+            width: 200px;
+            border: 2px solid red;
+        }
+    </style>
+  </head>
+  <body>
+    <h1 class="bg-warning  border border-danger border-5 fixed-top">Fixed</h1>
+   
+
+      <div class="text-bg-primary d-inline">Block</div>
+      <div class="text-bg-primary d-inline">Block</div>
+
+      <hr>
+      <span class="text-bg-primary d-block">Inline</span>
+      <span class="text-bg-primary d-block">Inline</span>
+
+      <h1 class="d-md-none d-lg-none">Heading</h1>
+
+      <!-- property-breakpoint-value -->
+       <!-- <section class="d-flex  demo justify-content-end justify-content-md-center justify-content-lg-evenly  ">
+        <div class="border border-danger">data</div>
+        <div class="border border-danger">data</div>
+        <div class="border border-danger">data</div>
+        <div class="border border-danger">data</div>
+       </section> -->
+
+       <!-- <section class="d-flex  demo align-items-start align-items-md-center ">
+        <div class="border border-danger  align-self-md-end">data1</div>
+        <div class="border border-danger ">data2</div>
+        <div class="border border-danger  align-self-end">data3</div>
+        <div class="border border-danger flex-grow-1">data4</div>
+       </section> -->
+
+       <section class="d-flex  demo ">
+        <div class="border border-danger  order-first">first</div>
+        <div class="border border-danger  order-5 order-md-1">data1</div>
+        <div class="border border-danger  order-4 order-md-2">data2</div>
+        <div class="border border-danger  order-3 order-md-3">data3</div>
+        <div class="border border-danger order-2 order-md-4">data4</div>
+        <div class="border border-danger order-1 order-md-5">data5</div>
+        <div class="border border-danger order-last">last</div>
+       </section>
+
+       <p class="user-select-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere explicabo ratione voluptatibus id unde provident quasi culpa suscipit et eius. Et iure eum recusandae dolor temporibus atque asperiores sapiente assumenda.</p>
+
+
+       <section id="data" class="position-relative">
+        <div class="border border-warning border-3 d-inline position-absolute top-0 start-100 translate-middle badge bg-success ">99+</div>
+       </section>
+
+
+       <section style="height: 200px; border: 1px solid red;">
+        <div class="bg-warning w-auto h-auto">
+          data
+        </div>
+       </section>
+       <div class="bg-warning  m-5" style="height: 200px; width: 200px;">spacing</div>
+
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem consequuntur unde esse doloribus eveniet. Aliquam consequuntur nihil dolores culpa eum neque incidunt natus possimus molestiae, ipsam consectetur sit perferendis voluptates?</p>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* p{
+                color: red;
+                background-color: yellow;
+              } */
+
+        span {
+            color: blue;
+        }
+
+        /* Universal selector */
+        * {
+            border: 1px solid purple;
+        }
+
+        /* tag Selector OR element selector */
+        /* p{
+            color: red;
+        } */
+
+        /* ID selector fastest selector */
+        #demo {
+            color: rgb(34, 8, 234);
+            /* background-color: red; */
+        }
+
+
+        /* class selector */
+        .newcls {
+            color: yellow;
+            /* background-color: red; */
+        }
+
+        /* Group selector */
+        #demo,
+        .newcls {
+            background-color: red;
+        }
+
+
+        /* Attribute selector */
+        input[type="text"] {
+            background-color: rebeccapurple;
+        }
+
+
+        /* Descendent selector */
+        /* section div p{
+          color: orange;
+        }  */
+
+        /* child combinator */
+        section>div>p {
+            color: rgb(39, 227, 10);
+        }
+
+        #demo {
+            color: yellow;
+            background-color: black;
+        }
+
+        :root {
+            --bs-txtcolor: rgb(252, 246, 246);
+            --bs-bgcolor: rgb(0, 0, 0);
+        }
+
+        p {
+            color: var(--bs-txtcolor);
+            background-color: var(--bs-bgcolor);
+        }
+
+        span {
+            color: var(--bs-txtcolor);
+            background-color: var(--bs-bgcolor);
+        }
+
+        b {
+            color: var(--bs-txtcolor);
+            background-color: var(--bs-bgcolor);
+        }
+
+        #an1:hover {
+            color: red;
+        }
+
+        #an2:active {
+            font-size: 40px;
+        }
+
+        #an3:visited {
+            color: yellow;
+        }
+
+
+        #inp1:focus {
+            background-color: orange;
+            color: red;
+            /* border: 2px solid green !important; */
+        }
+
+        #inp2:required {
+            color: red;
+        }
+
+        input[type="checkbox"]:checked {
+            height: 100px;
+            width: 100px;
+        }
+
+        input[type="email"]:invalid {
+            color: red;
+        }
+
+        input[type="email"]:valid {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <p style="color: red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate illo dicta commodi
+        cupiditate nulla officiis sint autem perspiciatis sit similique? Dignissimos maiores molestiae recusandae nisi
+        atque voluptatibus quas et cum.</p>
+    <p id="demo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet ratione officiis optio. Neque doloribus
+        vitae sunt illo, provident animi alias aliquam. Vero maiores corrupti minima doloribus labore aperiam voluptas.
+        In!</p>
+    <span>Aditya</span>
+    <p id="demo">Lorem ipsum do <span>ADITYA IN SPAN</span> lor sit amet consectetur adipisicing elit. Incidunt,
+        voluptate beatae! Temporibus maiores mollitia accusantium earum id praesentium, ipsam officia qui quisquam
+        eveniet quibusdam velit odit harum magnam delectus iure?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, voluptate beatae! Temporibus maiores mollitia
+        accusantium earum id praesentium, ipsam officia qui quisquam eveniet quibusdam velit odit harum magnam delectus
+        iure?</p>
+
+    <p class="newcls">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, voluptate beatae! Temporibus
+        maiores mollitia accusantium earum id praesentium, ipsam officia qui quisquam eveniet quibusdam velit odit harum
+        magnam delectus iure?</p>
+
+    <p class="newcls">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, voluptate beatae! Temporibus
+        maiores mollitia accusantium earum id praesentium, ipsam officia qui quisquam eveniet quibusdam velit odit harum
+        magnam delectus iure?</p>
+
+
+    <input type="text">
+    <input type="password">
+    <input type="search">
+
+
+
+    <section>
+        <div>
+            <p>ADITYA</p>
+        </div>
+    </section>
+    <p>Outer</p>
+    <a href="##" id="an1">Hover</a>
+    <a href="##" id="an2">Active</a>
+    <a href="####" id="an3">Visited</a>
+
+    <input type="text" id="inp1">
+
+    <form action="">
+        <input type="text" id="inp2" required>
+        <input type="text" id="inp3" readonly value="data">
+        <input type="checkbox" checked>
+
+        <input type="email" placeholder="Enter Email">
+        <input type="submit">
+    </form>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla porro odio ullam voluptates obcaecati unde, quidem
+        accusamus vitae similique eum! Consequatur fugiat, repellendus tempore cum aliquid fuga libero tenetur optio.
+    </p>
+    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, perferendis. Eum, suscipit! Odio blanditiis
+        unde eum aut ea sed deserunt consequuntur sit omnis dolore. Id voluptatum aliquam tempore praesentium
+        nobis.</span>
+    <br>
+    <b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias dolore dolor facere consectetur suscipit nisi
+        cumque sint, voluptate, repellendus perferendis eligendi, libero omnis mollitia necessitatibus natus aspernatur
+        repellat? Commodi, molestiae.</b>
+
+</body>
+
+</html>

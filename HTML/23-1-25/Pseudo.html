@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* Link Realted Pseudo Classes */
+        #an1:hover{
+            color: red;
+        }
+        #an2:active{
+            font-size: 40px;
+        }
+        #an3:visited{
+            color: yellow;
+        }
+
+        /* Input Realted Pseudo Classes */
+        input[type="text"]:focus{
+            background-color: yellow;
+        }
+        #validity:invalid{
+            color: red;
+        }
+        #validity:valid{
+            color: rgb(53, 238, 12);
+        }
+
+        /* Position Or Number Related pseudo classes */
+
+       ul li:first-child{
+              background-color: yellow;
+        }
+        li:last-child{
+              background-color: rgb(211, 14, 30);
+        }
+        li:nth-child(6){
+            background-color: blue;
+        }
+        li:empty{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <a href="##" id="an1">Hover</a>
+    <a href="##" id="an2">active</a>
+    <a href="####" id="an3">Visited</a>
+
+      <form action="">
+        <input type="text">
+        <input type="email" value="Data" readonly>
+        <input type="email" required>
+        <input type="email" placeholder="Enter Email" id="validity">
+        <input type="submit">
+      </form>
+
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li></li>
+        <li>4</li>
+        <li></li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+      </ul>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+    section
+    {
+        height: 600px;
+        border: 5px solid green;
+        display: flex;
+        /* flex-wrap: nowrap; */
+        flex-wrap: wrap;
+        /* flex-wrap: wrap-reverse; */
+        /* flex-direction: row; */                
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        /* It is used to align the flex items on x axis or horizontly */
+        /* justify-content:flex-start ; */
+        /* justify-content:flex-end ; */
+        /* justify-content:center ; */
+        /* justify-content:space-between ;
+        /* justify-content:space-around ; */
+        /* justify-content:space-evenly ; */ 
+
+  /* It is used to align the flex items on Y axis or Vertically */
+  /* align-items: stretch; */
+  /* align-items:flex-start ; */
+  /* align-items:flex-end ; */
+  /* align-items:center ; */
+
+  /* align-content: space-around;
+  /* align-content: space-between; */
+  /* align-content: space-evenly;  */
+ 
+}
+
+div{
+        height: 100px;
+        width: 100px;
+        border: 1px solid red;
+        /* display: inline-block; */
+    }
+
+    #item1
+    {
+        /* align-self: flex-start; */
+        /* order: 4; */
+    }
+    #item2
+    {
+        /* align-self: flex-end; */
+        /* order: 3; */
+    }
+    #item3
+    {
+        /* align-self: center; */
+        /* order: 2; */
+        /* flex-grow: 1; */
+    }
+    #item4
+    {
+        /* align-self: flex-start; */
+        /* order: 1; */
+        /* flex-grow:2 ; */
+    }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="item1">1</div>
+        <div id="item2">2</div>
+        <div id="item3">3</div>
+        <div id="item4">4</div>
+    </section>
+</body>
+</html>

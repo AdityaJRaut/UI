@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            height: 100vh;
+            position: relative;
+        }
+        div
+        {
+            height: 250px;
+            width: 200px;
+            border: 2px solid red;
+        }
+
+        #top {
+            
+            background-color: red;
+            position: absolute;
+            top: 0;
+            right: 50%;
+
+        }
+
+        #leftside {
+            background-color: yellow;
+            position: absolute;
+            top: 25%;
+            right: 60%;
+            z-index: -1;
+        }
+
+        #rightside {
+            background-color: green;
+            position: absolute;
+            top: 25%;
+            right: 40%;
+            z-index: -1;
+        }
+
+        #leftsidebottom {
+            
+            background-color: purple;
+            position: absolute;
+            top: 50%;
+            right: 70%;
+            z-index: -2;
+
+        }
+
+        #rightsidebottom {
+            
+            background-color: greenyellow;
+            position: absolute;
+            top: 50%;
+            left: 55%;
+            z-index: -2;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div id="top"></div>
+        <div id="leftside"></div>
+        <div id="rightside"></div>
+        <div id="leftsidebottom"></div>
+        <div id="rightsidebottom"></div>
+    </section>
+</body>
+
+</html>
