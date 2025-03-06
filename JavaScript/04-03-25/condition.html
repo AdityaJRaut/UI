@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = parseInt(prompt("Enter 1st number"))
+        let b = parseInt(prompt("Enter 2nd number"))
+        let c = parseInt(prompt("Enter 3rd number"))
+        console.log(a + "," + b + "," + c)
+        if (a > b) {
+            if (a > c) {
+                console.log(a + " is greater")
+            }
+        }
+        else if (b > c) {
+            console.log(b + " is greater")
+        }
+        else {
+            console.log(c + " is greater")
+        }
+
+        let x = parseInt(prompt("Enter 1st number"))
+        let y = parseInt(prompt("Enter 2nd number"))
+        let z = parseInt(prompt("Enter 3rd number"))
+        console.log(x + "," + y + "," + z)
+        if (x < y) {
+            if (x < z) {
+                console.log(x + " is smaller")
+            }
+        }
+        else if (y < z) {
+            console.log(y + " is smaller")
+        }
+        else {
+            console.log(z + " is smaller")
+        }
+
+        let money = parseInt(prompt("Enter amount to deposit"))
+        switch (money) {
+            case 100: console.log("100 rs. debited"); break;
+            case 200: console.log("200 rs. debited"); break;
+            case 300: console.log("300 rs. debited"); break;
+            case 400: console.log("400 rs. debited"); break;
+            case 500: console.log("500 rs. debited"); break;
+            case 600: console.log("600 rs. debited"); break;
+            case 700: console.log("700 rs. debited"); break;
+            case 800: console.log("800 rs. debited"); break;
+            case 900: console.log("900 rs. debited"); break;
+            case 1000: console.log("1000 rs. debited"); break;
+            default: console.log("you dont have enough balance..please try again later")
+        }
+        //given number is positive or negative
+        let num = parseInt("Enter a number to check for positive or negative")
+        if (num < 0) {
+            console.log("The entered number is negative")
+        }
+        else {
+            console.log("The entered number is positive")
+        }
+        //check given year is leap year or not
+        let year = parseInt("Enter year to check for leap year")
+        if (year % 4 == 0) {
+            if (year % 100 == 0) {
+                if (year % 400 == 0)
+                    console.log("Leap Year")
+                else
+                    console.log("Not a Leap Year")
+            }
+            else
+                console.log("Leap Year")
+        }
+        //check  umber present between 10 and 20
+        let nmbbtn = parseInt("Enter a number to check weather it is between 10 and 20")
+        if (nmbbtn >= 10 && nmbbtn <= 20) {
+            console.log("Yes")
+        }
+        else {
+            console.log("No")
+        }
+    </script>
+</body>
+
+</html>

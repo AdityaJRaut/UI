@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let a = 10;
+        let b = 20;
+        document.write("using default function<br>")
+        document.write("a= " + a + " b= " + b + "<br>");
+        function add1() {
+            document.write("a+b " + (a + b) + "<br>");
+        }
+        add1();
+        function sub1() {
+            document.write("a-b " + (a - b) + "<br>");
+        }
+        sub1();
+        function mul1() {
+            document.write("a*b " + (a * b) + "<br>");
+        }
+        mul1();
+
+        function divide1() {
+            document.write("a/b " + (a / b) + "<br>");
+        }
+        divide1();
+        document.write("<hr>");
+        a = 20;
+        b = 30;
+        document.write("using parameterized function<br>")
+        document.write("a= " + a + " b= " + b + "<br>");
+        function add(p, q) {
+            document.write("a+b " + (p + q) + "<br>");
+        }
+        add(a, b);
+        function sub(p, q) {
+            document.write("a-b " + (p - q) + "<br>");
+        }
+        sub(a, b);
+        function mul(p, q) {
+            document.write("a*b " + (p * q) + "<br>");
+        }
+        mul(a, b);
+
+        function divide(p, q) {
+            document.write("a/b " + (p / q) + "<br>");
+        }
+        divide(a, b);
+        document.write("<hr>");
+
+        document.write("Using function return<br>");
+        function add(c, d) {
+            return c + d;
+        }
+        let sum = add(5, 3);
+        document.write(sum);
+        document.write("<hr>")
+
+        function Fun1() {
+            let b = 30;
+            console.log("inside fun1: local b from fun1 is " + b);
+
+
+            function Fun2() {
+                let d = 50;
+                console.log("inside fun2: global b from fun1 is " + b);
+                console.log("inside fun2: local d from fun2 is " + d);
+            }
+            Fun2();
+        }
+        Fun1();
+
+        document.write("Print full name using template literals<br>")
+        let name = "Aditya";
+        let surname = "Raut";
+        document.write(`Hello My Name is ${name} and my Surname is ${surname}`);
+
+        //adddition using arrow function
+        const addition = (a, b) => a + b;
+        console.log(addition(25, 30)); 
+    </script>
+</body>
+
+</html>
